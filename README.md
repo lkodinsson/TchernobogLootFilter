@@ -1,5 +1,6 @@
 # TchernobogLootFilter
 Loki's Loot Filter for Tchernobog
+The ultimate Tchernobog loot filter
 
 Functionally it is more of a extension to the functionality of filters. Rather than modifying lootFilter.lua and creating your own logic, you instead create a filter profile. The game loads my filter, loads your profile, and from there it does all the filter work you want.
 
@@ -62,8 +63,7 @@ recolorPotions		Boolean		Potions will be recolored for clarity and value (is ove
 recolorBooks		Boolean		Books will be recolored for clarity and value (is overridden by recolorItemList)
 recolorScrolls		Boolean		Scrolls will be recolored for clarity and value (is overridden by recolorItemList)
 recolorShrines		Boolean		Shrines will be recolored for clarity and value (is overridden by recolorItemList)
-recolorItemList		Table		List of items to recolor, and what to
-```
+recolorItemList		Table		List of items to recolor, and what to```
 
 (More will be added to this list in the future)
 
