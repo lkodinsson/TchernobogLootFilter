@@ -1,4 +1,5 @@
 COLOR_PURPLE = 9
+ITEM_OBJECT = -1
 
 SHOW = false
 HIDE = true

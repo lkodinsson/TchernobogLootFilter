@@ -6,7 +6,7 @@ function hideItems(data)
 	local itemName = data.displayedName
 	local itemColor = data.textColor
 	
-	if itemColor ~= COLOR_WHITE and isEquipment(data) and data.isIdentified == true then return SHOW end
+	if itemColor ~= COLOR_WHITE and isEquipment(data) and data.isIdentified == 1 then return SHOW end
 	
 	if alwaysShow[itemName] or highValue[itemName] then return SHOW end
 	if alwaysShowType[itemType[itemName]] then
@@ -73,7 +73,7 @@ function hideItems(data)
 		local spellName = string.match(itemName, " of (.*)")
 		if bookLevel[itemName] ~= nil and spellRating[spellName] ~= nil then
 			local levelRating = bookLevel[itemName]+(42-bookLevel[itemName])*spellRating[spellName]/4
-			if playerLevel*levelMult >= levelRating*(100-bookStrict) then
+			if playerLevel*levelMult >= levelRating*(100-bookStrict)/100*spellMult then
 				return HIDE
 			end
 		end
@@ -82,7 +82,7 @@ function hideItems(data)
 		local spellName = string.match(itemName, " of (.*)")
 		if scrollLevel[itemName] ~= nil and spellRating[spellName] ~= nil then
 			local levelRating = scrollLevel[itemName]+(42-scrollLevel[itemName])*spellRating[spellName]/4
-			if playerLevel*levelMult >= levelRating*(100-scrollStrict) then
+			if playerLevel*levelMult >= levelRating*(100-scrollStrict)/100*spellMult then
 				return HIDE
 			end
 		end

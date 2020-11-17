@@ -48,34 +48,54 @@ bookLevel = {
 }
 
 scrollLevel = {
-	["scroll of resurrect"] = 1,
-	["scroll of identify"] = 1,
+	-- page 1
+	--["scroll of frost shard"] = 1,		-- doesn't exist?
+	--["scroll of fire bolt"] = 1,			-- doesn't exist?
+	--["scroll of charged bolt"] = 1,		-- doesn't exist?
 	["scroll of healing"] = 1,
-	["scroll of town portal"] = 1,
-	["scroll of lightning"] = 3,
+	--["scroll of heal other"] = 1,			-- doesn't exist?
+	--["scroll of holy bolt"] = 1,			-- doesn't exist?
+	["scroll of inferno"] = 1,
+	-- page 2
 	["scroll of warp"] = 5,
 	["scroll of firewall"] = 3,
-	["scroll of circle of ice"] = 4,
-	["scroll of inferno"] = 1,
+	--["scroll of telekinesis"] = 1,		-- doesn't exist?
+	["scroll of lightning"] = 3,
+	["scroll of town portal"] = 3,
 	["scroll of flash"] = 5,
-	["scroll of infravision"] = 7,
+	["scroll of circle of ice"] = 4,
+	-- page 3
 	["scroll of phasing"] = 5,
-	["scroll of flame wave"] = 9,
-	["scroll of fireball"] = 7,
-	["scroll of stone curse"] = 5,
 	["scroll of lightning wall"] = 7,
-	["scroll of sacrifice"] = 8,
-	["scroll of guardian"] = 10,
+	["scroll of stone curse"] = 5,
+	["scroll of fireball"] = 7,
+	["scroll of flame wave"] = 9,
+	["scroll of chain lightning"] = 9,
+	["scroll of ice blast"] = 9,
+	-- page 4
 	["scroll of mind mace"] = 10,
+	--["scroll of elemental"] = 1,			-- doesn't exist?
 	["scroll of golem"] = 9,
-	["scroll of sentinel"] = 18,
-	["scroll of meteor cluster"] = 15,
 	["scroll of frozen orb"] = 13,
+	["scroll of meteor cluster"] = 15,
+	["scroll of guardian"] = 10,
+	-- page 5
 	["scroll of nova"] = 18,
-	["scroll of immolation"] = 19,
+	["scroll of sentinel"] = 18,
 	["scroll of teleport"] = 12,
-	["scroll of blizzard"] = 23,
 	["scroll of apocalypse"] = 28,
+	["scroll of blizzard"] = 23,
+	["scroll of immolation"] = 19,
+	-- page 6
+	--["scroll of dark pact"] = 1,			-- doesn't exist?
+	--["scroll of insanity"] = 1,			-- doesn't exist?
+	--["scroll of bone spirit"] = 1,		-- doesn't exist?
+	--["scroll of blood star"] = 1,			-- doesn't exist?
+	["scroll of sacrifice"] = 8,
+	-- item only
+	["scroll of identify"] = 1,
+	["scroll of infravision"] = 7,
+	["scroll of resurrect"] = 1,
 }
 
 spellRating = {

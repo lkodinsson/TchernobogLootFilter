@@ -13,7 +13,7 @@ function recolorItems(data)
 	if itemColor == COLOR_GREEN and (highValueSet[itemName] or highValueSetBase[itemName]) then return COLOR_PURPLE end
 	if highValueJewelry and (data.itemType == ITEM_FING or data.itemType == ITEM_NECK) and (itemColor == COLOR_GOLD or itemColor == COLOR_GREEN) then return COLOR_PURPLE end
 	
-	if recolorShrines and data.itemType == -1 then
+	if recolorShrines and data.itemType == ITEM_OBJECT then
 		if shrinesSpecial[itemName] then
 			return shrinesSpecial[itemName]
 		elseif itemName:find("goat shrine") then

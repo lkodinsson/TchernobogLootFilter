@@ -2,7 +2,7 @@ function renameItems(data)
 	local itemName = data.displayedName
 	local itemColor = data.textColor
 	
-	if trapWarning and data.itemType == -1 and not itemName:find("blocked") and itemColor == COLOR_RED then
+	if trapWarning and data.itemType == ITEM_OBJECT and not itemName:find("blocked") and itemColor == COLOR_RED then
 		itemName = "! trapped !"
 	end
 
