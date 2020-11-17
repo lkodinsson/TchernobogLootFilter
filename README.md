@@ -9,19 +9,23 @@ Functionally it is more of a extension to the functionality of filters. Rather t
 
 If you want to change the filter's profile to something more strict, open and edit config.ini and set to the name of your desired filter profile. For example:
 
-```PROFILE = "Semi-Strict"```
+```
+PROFILE = "Semi-Strict"
+```
 
 This would change the currently active filter profile from "Default" to "Semi-strict." Other stock profiles are listed below.
 
 # Stock Profiles
 Below are the stock profiles provided. Each one contains features from the previous filter.
 
-```Default: Extremely low strictness. Keeps a majority of items visible. Highlight a majority of valuable items.
+```
+Default: Extremely low strictness. Keeps a majority of items visible. Highlight a majority of valuable items.
 Semi-Strict: Slightly higher strictness scaling.
 Strict: Higher strictness scaling, forcefully hides low value base items.
 Super-Strict: Much higher strictness scaling, forcefully hides normal items, and basic potions.
 Uber-Strict: Extremely high strictness scaling, forcefully hides magic items.
-Example: An example profile for creating custom profiles. It shows how all variables are used. Not recommended for normal use.```
+Example: An example profile for creating custom profiles. It shows how all variables are used. Not recommended for normal use.
+```
 
 # Basic Customization
 This is basically a short primer on how-to create a custom profile and a list of variables.
@@ -72,12 +76,16 @@ Defaults for these variables can be found in the data/filter_defaults.lua.
 # Advanced Customization
 I'll make a tutorial for safely changing values set in the data files at some point.
 
-```data_items.lua
+```
+data_items.lua
 data_uniques.lua
 data_sets.lua
 data_spells.lua
-data_shrines.lua```
+data_shrines.lua
+```
 
 For example:
 
-```shrines["diabolic"] = COLOR_ORANGE```
+```
+shrines["diabolic"] = COLOR_ORANGE
+```
