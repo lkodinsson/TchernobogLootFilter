@@ -22,7 +22,7 @@ dofile "lootFilter/config.ini"
 
 --load filter profile
 if PROFILE ~= nil and type(PROFILE)=="string" then
-	dofile "lootFilter/profiles/"..PROFILE..".ini"
+	dofile("lootFilter/profiles/"..PROFILE..".ini")
 end
 
 --reconfigure profile to fit within allowed parameters

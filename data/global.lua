@@ -1,7 +1,7 @@
 COLOR_PURPLE = 9
 
-SHOW = true
-HIDE = false
+SHOW = false
+HIDE = true
 
 -- handleEverything() changed to allow modifying of NPCs/Objects
 function handleEverything(data,filterList,exception,renames,recolors)

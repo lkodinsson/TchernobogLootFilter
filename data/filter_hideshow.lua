@@ -87,7 +87,7 @@ function hideItems(data)
 		end
 	
 	elseif filterGold and data.itemType == ITEM_GOLD then
-		howMuchGold = tonumber(string.match(string.match(itemName,"%d+ gold pieces"),"%d+"))
+		local howMuchGold = tonumber(string.match(string.match(itemName,"%d+ gold pieces"),"%d+"))
 		if goldLimit == nil then
 			if howMuchGold < ((goldStrict/10)*playerLevel*playerLevel)/(5-strictness/100*4) then return HIDE end
 		else
