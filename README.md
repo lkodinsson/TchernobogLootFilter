@@ -24,8 +24,9 @@ Semi-Strict: Slightly higher strictness scaling.
 Strict: Higher strictness scaling, forcefully hides low value base items.
 Super-Strict: Much higher strictness scaling, forcefully hides normal items, and basic potions.
 Uber-Strict: Extremely high strictness scaling, forcefully hides magic items.
-Example: An example profile for creating custom profiles. It shows how all variables are used. Not recommended for normal use.
 ```
+
+There is also an example profile provided. It shows how all variables are used. It is not recommended for normal use.
 
 # Basic Customization
 This is basically a short primer on how-to create a custom profile and a list of variables.
