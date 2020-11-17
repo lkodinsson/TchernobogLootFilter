@@ -50,20 +50,20 @@ filterScrolls		Boolean		Are scrolls filtered by level/strictness
 trapWarning		Boolean		Traps will show up as "! TRAPPED !" to be more obvious
 alwaysHide		Table		List of items to always hide
 alwaysHideType		Table		List of item types to always hide
-alwaysHideUnique		Table		List of unique items to always hide
+alwaysHideUnique	Table		List of unique items to always hide
 alwaysHideSet		Table		List of set items to always hide
 alwaysShow		Table		List of items to always show		priority over hide)
 alwaysShowType		Table		List of item types to always show		priority over hide)
-alwaysShowUnique		Table		List of unique items to always show		priority over hide)
+alwaysShowUnique	Table		List of unique items to always show		priority over hide)
 alwaysShowSet		Table		List of set items to always show		priority over hide)
 highValue		Table		List of items to always show, and recolor purple		highest priority)
-highValueJewelry		Boolean		Always show unique jewelry, and recolors them purple		highest priority)
+highValueJewelry	Boolean		Always show unique jewelry, and recolors them purple		highest priority)
 highValueUnique		Table		List of unique items to always show, and recolor purple		highest priority)
 highValueSet		Table		List of set items to always show, and recolor purple		highest priority)
-typeFilterUniques		Boolean		Whether or not type filtering effects unique/set items
+typeFilterUniques	Boolean		Whether or not type filtering effects unique/set items
 renameItemList		Table		List of items to rename, and what to
 renameSubList		Table		List of parts of item names, and what to change them to
-recolorEquipment		Boolean		Low level normal equipment is recolored grey		overridden by recolorItemList)
+recolorEquipment	Boolean		Low level normal equipment is recolored grey		overridden by recolorItemList)
 recolorPotions		Boolean		Potions will be recolored for clarity and value		overridden by recolorItemList)
 recolorBooks		Boolean		Books will be recolored for clarity and value		overridden by recolorItemList)
 recolorScrolls		Boolean		Scrolls will be recolored for clarity and value		overridden by recolorItemList)
