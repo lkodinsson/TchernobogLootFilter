@@ -5,7 +5,7 @@ The ultimate Tchernobog loot filter
 Functionally it is more of a extension to the functionality of filters. Rather than modifying lootFilter.lua and creating your own logic, you instead create a filter profile. The game loads my filter, loads your profile, and from there it does all the filter work you want.
 
 # Installation
-[Download](https://github.com/lkodinsson/TchernobogLootFilter/archive/main.zip) the latest version, then extract it into your lootFilter folder where you have installed Tchernobog. That's it, you're done.
+[Download the latest version](https://github.com/lkodinsson/TchernobogLootFilter/archive/main.zip), then extract it into your lootFilter folder where you have installed Tchernobog. That's it, you're done.
 
 If you want to change the filter's profile to something more strict, open and edit config.ini and set to the name of your desired filter profile. For example:
 
@@ -19,7 +19,7 @@ This would change the currently active filter profile from "Default" to "Semi-st
 Below are the stock profiles provided. Each one contains features from the previous filter.
 
 ```
-Default: Extremely low strictness. Keeps a majority of items visible. Highlight a majority of valuable items.
+Default: Extremely low strictness. Keeps a majority of items visible. Highlights a majority of valuable items.
 Semi-Strict: Slightly higher strictness scaling.
 Strict: Higher strictness scaling, forcefully hides low value base items.
 Super-Strict: Much higher strictness scaling, forcefully hides normal items, and basic potions.
