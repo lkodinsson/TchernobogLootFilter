@@ -4,7 +4,9 @@ goldStrict = 0
 bookStrict = 0
 scrollStrict = 0
 
-scaleToLevel = nil	--it will set this automatically
+fixedLevel = nil	--it will set this automatically
+
+scaleToLevel = false
 
 goldLimit = nil		--it will set this automatically
 

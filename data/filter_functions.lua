@@ -1,3 +1,11 @@
+strictnessDefault = strictness	-- save strictness setting on filter load
+
+function update(data)	-- updates certain variables during active filter operation
+	if scaleToLevel then
+		strictness = strictnessDefault*data.playerLevel/60
+	end
+end
+
 function set(list)
 	local set = {}
 	if list[1] == nil then return set end

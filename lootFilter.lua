@@ -37,7 +37,9 @@ dofile "lootFilter/data/filter_reconfig.lua"
 function myLootFilter(data)
 ---------------add your functions to the array here!---------------
 --list with exception of items
-	local exception = {}
+	local exception = {
+		update(data),	-- returns nil so as not to interfere with filter
+	}
 --list with filters
 	local filterList = {
 		hideItems(data),

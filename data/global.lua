@@ -4,6 +4,8 @@ ITEM_OBJECT = -1
 SHOW = false
 HIDE = true
 
+warningMsg = false
+
 -- handleEverything() changed to allow modifying of NPCs/Objects
 function handleEverything(data,filterList,exception,renames,recolors)
 	local newName = getNew(data.displayedName,renames)
@@ -37,7 +39,11 @@ function lootFilter(displayedName,textColor,itemType,isIdentified,playerClass,pl
 		    printMsg("One or more of the values returned by your lootFilter were empty!!!")	
 		end
 	else
-		printMsg(ret)
+		if not warningMsg then
+			warningMsg = true
+			printMsg("Filter or profile is bad.")	--this error message isn't much better than before, but it's a start
+		end
+		--printMsg(ret)		--getting bombarded with messages of "nil" was annoying and not useful
 		return -1
 	end
 	return TRUE

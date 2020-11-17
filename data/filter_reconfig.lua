@@ -10,9 +10,9 @@ if bookStrict > 100 then bookStrict = 100 end
 if scrollStrict < 0 then scrollStrict = 0 end
 if scrollStrict > 100 then scrollStrict = 100 end
 
-if type(scaleToLevel) == "number" then --I only care because it is allowed to be nil
-	if scaleToLevel < 0 then scaleToLevel = 0 end
-	if scaleToLevel > 60 then scaleToLevel = 60 end
+if type(fixedLevel) == "number" then --It is allowed to be nil, so only do something if its a number
+	if fixedLevel < 0 then fixedLevel = 0 end
+	if fixedLevel > 60 then fixedLevel = 60 end
 end
 
 if rarityMult["rare"] < 2 then rarityMult["rare"] = 2 end

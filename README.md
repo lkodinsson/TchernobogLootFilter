@@ -31,7 +31,7 @@ There is also an example profile provided. It shows how all variables are used. 
 # Basic Customization
 This is basically a short primer on how-to create a custom profile and a list of variables.
 
-Inside a profile		such as Example.ini in the profiles folder) you may change the following variables to any appropriate value(s), and it will change how the filter functions.
+Inside a profile (such as Example.ini in the profiles folder) you may change the following variables, and it will change how the filter functions.
 
 ```
 Variable		Type		Description
@@ -39,7 +39,8 @@ strictness		Number		Degree of overall filter strictness, ranges from 0 to 100
 goldStrict		Number		Degree of filter strictness on gold, ranges from 0 to 100
 bookStrict		Number		Degree of filter strictness on books, ranges from 0 to 100
 scrollStrict		Number		Degree of filter strictness on scrolls, ranges from 0 to 100
-scaleToLevel		Number		Forced character level, ranges from 0 to 60 (overrides automatic level scaling)
+fixedLevel		Number		Forced character level, ranges from 0 to 60 (overrides automatic level scaling)
+scaleToLevel		Boolean		Determines if strictness increases as you level instead of being fixed
 goldLimit		Number		Lowest visible size of gold piles (overrides automatic scaling if set to any value)
 showNormal		Boolean		Are normal items are allowed to be visible (does not force them to be visible)
 showMagic		Boolean		Are magic items are allowed to be visible (does not force them to be visible)
@@ -74,7 +75,9 @@ recolorItemList		Table		List of items to recolor, and what to
 
 (More will be added to this list in the future)
 
-Defaults for these variables can be found in the data/filter_defaults.lua.
+Defaults for these variables can be found in data/filter_defaults.lua.
+
+Note: you can also set these things in your config.ini file to change your preferred defaults (regardless of profile), BUT they will be overridden by anything specifically set by that profile.
 
 # Advanced Customization
 I'll make a tutorial for safely changing values set in the data files at some point.
