@@ -1,8 +1,7 @@
 function recolorItems(data)
-	if scaleToLevel ~= nil and type(scaleToLevel) == "number" then
-		local playerLevel = scaleToLevel
-	else
-		local playerLevel = data.playerLevel
+	local playerLevel = data.playerLevel
+	if type(scaleToLevel) == "number" then
+		playerLevel = scaleToLevel
 	end
 	local itemName = data.displayedName
 	local itemColor = data.textColor

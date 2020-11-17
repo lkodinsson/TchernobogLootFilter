@@ -1,11 +1,12 @@
 function hideItems(data)
-	if scaleToLevel ~= nil and type(scaleToLevel) == "number" then
-		local playerLevel = scaleToLevel
-	else
-		local playerLevel = data.playerLevel
+	local playerLevel = data.playerLevel
+	if type(scaleToLevel) == "number" then
+		playerLevel = scaleToLevel
 	end
 	local itemName = data.displayedName
 	local itemColor = data.textColor
+	
+	if itemColor ~= COLOR_WHITE and data.isIdentified == true then return SHOW end
 	
 	if alwaysShow[itemName] or highValue[itemName] then return SHOW end
 	if alwaysShowType[itemType[itemName]] then

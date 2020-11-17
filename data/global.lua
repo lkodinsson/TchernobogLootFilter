@@ -18,7 +18,7 @@ end
 
 -- lootFilter() changed to allow the hidden purple color
 function lootFilter(displayedName,textColor,itemType,isIdentified,playerClass,playerLevel)
-	local isGood,v1,v2,v3 = pcall(myLootFilter,{displayedName=displayedName:lower(),textColor=textColor,itemType=itemType,playerClass=playerClass,playerLevel=playerLevel})
+	local isGood,v1,v2,v3 = pcall(myLootFilter,{displayedName=displayedName:lower(),textColor=textColor,itemType=itemType,isIdentified=isIdentified,playerClass=playerClass,playerLevel=playerLevel})
     if isGood == true then
 		if v1 ~= nil and v2 ~= nil and v3 ~= nil then
 		    if type(v1) == "string" and type(v2) == "number" and type(v3) == "number" then
