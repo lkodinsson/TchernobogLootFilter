@@ -1,0 +1,44 @@
+shrines = {
+	["abandoned"] = COLOR_BLUE, --increases dex
+	["creepy"] = COLOR_BLUE, --increases strength
+	["cryptic"] = COLOR_ORANGE, --refills mana & casts nova
+	["diabolic"] = COLOR_GOLD, --summons a boss nearby
+	["divine"] = COLOR_YELLOW, --refills health and mana & gives 2 potions
+	["eerie"] = COLOR_BLUE, --increases magic
+	["eldritch"] = COLOR_YELLOW, --transforms potions into rejuvs
+	["enchanted"] = COLOR_ORANGE, --increases spell levels, but drains mana
+	["experience"] = COLOR_BLUE, --experience boost
+	["fascinating"] = COLOR_ORANGE, --increases fire bolt level, but reduces max mana
+	["fire protection"] = COLOR_BLUE, --fire resistance
+	["glimmering"] = COLOR_YELLOW, --identifies all items
+	["hidden"] = COLOR_YELLOW, --grants temporary invisibility
+	["holy"] = COLOR_GREY, --casts phasing
+	["imposing"] = COLOR_YELLOW, --increases critical chance
+	["light"] = COLOR_YELLOW, --increases speed
+	["lightning protection"] = COLOR_BLUE, --lightning resistance
+	["lore"] = COLOR_YELLOW, --increases spell levels
+	["magic protection"] = COLOR_BLUE, --magic resistance
+	["magical"] = COLOR_BLUE, --mana shield
+	["mastery"] = COLOR_YELLOW, --increases damage
+	["meditating"] = COLOR_YELLOW, --mana regen
+	["mystic"] = COLOR_WHITE, --casts town portal
+	["mysterious"] = COLOR_RED, --increases a random stat, reduces the rest
+	["ornate"] = COLOR_ORANGE, --increases holy bolt level, but reduces max mana
+	["protection"] = COLOR_BLUE, --physical resistance & armor class
+	["quiet"] = COLOR_BLUE, --increases vitality
+	["religious"] = COLOR_YELLOW, --repairs all items
+	["sacred"] = COLOR_ORANGE, --increases charged bolt level, but reduces max mana
+	["secluded"] = COLOR_WHITE, --reveals map
+	["spiritual"] = COLOR_GREY, --gold fills iventory slots
+	["spooky"] = COLOR_BLUE, --refills health & mana
+	["stone"] = COLOR_YELLOW, --recharges staves
+	["tainted"] = COLOR_ORANGE, --increases a random stat, each other player gets a random stat reduced
+	["thaumaturgic"] = COLOR_WHITE, --resets other shrines/containers/doors
+}
+
+shrinesSpecial = {
+	["murky pool"] = COLOR_BLUE, --grants infravision
+	["blood fountain"] = COLOR_GREY, --heals 1 health
+	["purifying spring"] = COLOR_GREY, --heals 1 mana
+	["fountain of tears"] = COLOR_RED, --increases a random stat, reduces a random other stat
+}
