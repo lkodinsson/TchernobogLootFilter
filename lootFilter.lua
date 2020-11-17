@@ -28,6 +28,9 @@ end
 --reconfigure profile to fit within allowed parameters
 dofile "lootFilter/data/filter_reconfig.lua"
 
+--load filter update logic
+dofile "lootFilter/data/filter_update.lua"
+
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
@@ -38,7 +41,7 @@ function myLootFilter(data)
 ---------------add your functions to the array here!---------------
 --list with exception of items
 	local exception = {
-		update(data),	-- returns nil so as not to interfere with filter
+		updateFilter(data),	-- returns nil so as not to interfere with filter
 	}
 --list with filters
 	local filterList = {
