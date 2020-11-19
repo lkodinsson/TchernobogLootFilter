@@ -18,13 +18,13 @@ This would change the currently active filter profile from "Default" to "Semi-st
 # Stock Profiles
 Below are the stock profiles provided. Each one contains features from the previous filter.
 
-```
-Default: Extremely low strictness. Keeps a majority of items visible. Highlights a majority of valuable items.
-Semi-Strict: Slightly higher strictness scaling.
-Strict: Higher strictness scaling, forcefully hides low value base items.
-Super-Strict: Much higher strictness scaling, forcefully hides normal items, and basic potions.
-Uber-Strict: Extremely high strictness scaling, forcefully hides magic items.
-```
+| Profile | Description |
+| --- | --- |
+| Default | Extremely low strictness. Keeps a majority of items visible. Highlights a majority of valuable items. |
+| Semi-Strict | Slightly higher strictness scaling. |
+| Strict | Higher strictness scaling, forcefully hides low value base items. |
+| Super-Strict | Much higher strictness scaling, forcefully hides normal items, and basic potions. |
+| Uber-Strict | Extremely high strictness scaling, forcefully hides magic items. |
 
 There is also an example profile provided. It shows how all variables are used. It is not recommended for normal use.
 
