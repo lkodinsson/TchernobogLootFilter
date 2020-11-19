@@ -28,70 +28,13 @@ Uber-Strict: Extremely high strictness scaling, forcefully hides magic items.
 
 There is also an example profile provided. It shows how all variables are used. It is not recommended for normal use.
 
-# Basic Customization
-This is basically a short primer on how-to create a custom profile and a list of variables.
-
-Inside a profile (such as Example.ini in the profiles folder) you may change the following variables, and it will change how the filter functions.
+# Customization
+Creating filters is about as easy as creating a new text file, then declaring something like:
 
 ```
-Variable		Type		Description
-strictness		Number		Degree of overall filter strictness, ranges from 0 to 100
-goldStrict		Number		Degree of filter strictness on gold, ranges from 0 to 100
-bookStrict		Number		Degree of filter strictness on books, ranges from 0 to 100
-scrollStrict		Number		Degree of filter strictness on scrolls, ranges from 0 to 100
-fixedLevel		Number		Forced character level, ranges from 0 to 60 (overrides automatic level scaling)
-scaleToLevel		Boolean		Determines if strictness increases as you level instead of being fixed
-goldLimit		Number		Lowest visible size of gold piles (overrides automatic scaling if set to any value)
-showNormal		Boolean		Are normal items are allowed to be visible (does not force them to be visible)
-showMagic		Boolean		Are magic items are allowed to be visible (does not force them to be visible)
-showRare		Boolean		Are rare items are allowed to be visible (does not force them to be visible)
-filterEquipment		Boolean		Is equipment filtered by level/strictness
-filterGold		Boolean		Is gold filtered by level/strictness
-filterBooks		Boolean		Are books filtered by level/strictness
-filterScrolls		Boolean		Are scrolls filtered by level/strictness
-trapWarning		Boolean		Traps will show up as "! TRAPPED !" to be more obvious
-alwaysHide		Table		List of items to always hide
-alwaysHideType		Table		List of item types to always hide
-alwaysHideUnique	Table		List of unique items to always hide
-alwaysHideSet		Table		List of set items to always hide
-alwaysShow		Table		List of items to always show (priority over hide)
-alwaysShowType		Table		List of item types to always show (priority over hide)
-alwaysShowUnique	Table		List of unique items to always show (priority over hide)
-alwaysShowSet		Table		List of set items to always show (priority over hide)
-highValue		Table		List of items to always show, and recolor purple (highest priority)
-highValueJewelry	Boolean		Always show unique jewelry, and recolors them purple (highest priority)
-highValueUnique		Table		List of unique items to always show, and recolor purple (highest priority)
-highValueSet		Table		List of set items to always show, and recolor purple (highest priority)
-typeFilterUniques	Boolean		Whether or not type filtering effects unique/set items
-renameItemList		Table		List of items to rename, and what to
-renameSubList		Table		List of parts of item names, and what to change them to
-recolorEquipment	Boolean		Low level normal equipment is recolored grey (overridden by recolorItemList)
-recolorPotions		Boolean		Potions will be recolored for clarity and value (overridden by recolorItemList)
-recolorBooks		Boolean		Books will be recolored for clarity and value (overridden by recolorItemList)
-recolorScrolls		Boolean		Scrolls will be recolored for clarity and value (overridden by recolorItemList)
-recolorShrines		Boolean		Shrines will be recolored for clarity and value (overridden by recolorItemList)
-recolorItemList		Table		List of items to recolor, and what to
+goldLimit = 5000
 ```
 
-(More will be added to this list in the future)
+Inside that file, picking that file as your profile, then toggling your loot filter in-game. (No restart required)
 
-Defaults for these variables can be found in data/filter_defaults.lua.
-
-Note: you can also set these things in your config.ini file to change your preferred defaults (regardless of profile), BUT they will be overridden by anything specifically set by that profile.
-
-# Advanced Customization
-I'll make a tutorial for safely changing values set in the data files at some point.
-
-```
-data_items.lua
-data_uniques.lua
-data_sets.lua
-data_spells.lua
-data_shrines.lua
-```
-
-For example:
-
-```
-shrines["diabolic"] = COLOR_ORANGE
-```
+[See the wiki](https://github.com/lkodinsson/TchernobogLootFilter/wiki) for more details on how to build a profile. If you're looking for the reference list of variables, [click here](https://github.com/lkodinsson/TchernobogLootFilter/wiki/Configurable-Variables).
