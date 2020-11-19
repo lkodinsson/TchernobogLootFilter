@@ -21,8 +21,14 @@ dofile "lootFilter/data/filter_defaults.lua"
 dofile "lootFilter/config.ini"
 
 --load filter profile
-if PROFILE ~= nil and type(PROFILE)=="string" then
-	dofile("lootFilter/profiles/"..PROFILE..".ini")
+if type(PROFILE)=="string" then
+	if isFile("lootFilter/profiles/"..PROFILE..".ini") then
+		dofile("lootFilter/profiles/"..PROFILE..".ini")
+	else isFile("lootFilter/profiles/"..PROFILE..".txt") then
+		dofile("lootFilter/profiles/"..PROFILE..".txt")
+	else
+		printMsg("Invalid profile.")
+	end
 end
 
 --reconfigure profile to fit within allowed parameters
