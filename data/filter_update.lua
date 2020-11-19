@@ -7,6 +7,10 @@ function updateFilter(data)	-- updates certain variables during active filter op
 	end
 	
 	if scaleToLevel then
-		strictness = strictnessDefault*playerLevel/60
+		if scaleToLevel == "slow" then
+			strictness = strictnessDefault*playerLevel/(120-playerLevel)
+		else
+			strictness = strictnessDefault*playerLevel/60
+		end
 	end
 end
