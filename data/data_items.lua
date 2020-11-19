@@ -6,8 +6,8 @@ rarityMult = {
 
 itemLevel = {
 	-- head gear (tier 1)
-	["cap"] = 0.75,
-	["skull cap"] = 1,
+	["cap"] = 1,				-- level 1
+	["skull cap"] = 2,			-- level 1
 	["helm"] = 3,
 	["full helm"] = 6,
 	["crown"] = 9,
@@ -23,13 +23,13 @@ itemLevel = {
 	["spired helm"] = 40,
 	
 	-- body armor (tier 1)
-	["rags"] = 0.25,
-	["cape"] = 0.5,
-	["cloak"] = 0.75,
-	["robe"] = 1,
-	["quilted armor"] = 1.25,
-	["leather armor"] = 1.5,
-	["hard leather armor"] = 2,
+	["rags"] = 1,				-- level 1
+	["cape"] = 1.33,			-- level 1
+	["cloak"] = 1.67,			-- level 1
+	["robe"] = 2,				-- level 1
+	["quilted armor"] = 2.33,	-- level 1
+	["leather armor"] = 2.67,	-- level 1
+	["hard leather armor"] = 3,	-- level 1
 	["studded leather armor"] = 4,
 	["ring mail"] = 5,
 	["chain mail"] = 7,
@@ -60,7 +60,7 @@ itemLevel = {
 	["ancient plate"] = 41,
 	
 	-- belts (tier 1)
-	["sash"] = 1,
+	["sash"] = 1.5,				-- level 1
 	["light belt"] = 2,
 	["belt"] = 6,
 	["heavy belt"] = 11,
@@ -73,8 +73,8 @@ itemLevel = {
 	["war belt"] = 41,
 	
 	-- shields (tier 1)
-	["buckler"] = 0.75,
-	["small shield"] = 1,
+	["buckler"] = 2,			-- level 1
+	["small shield"] = 3,		-- level 1
 	["large shield"] = 4,
 	["kite shield"] = 8,
 	["tower shield"] = 13,
@@ -88,10 +88,10 @@ itemLevel = {
 	["aegis"] = 37,
 	
 	-- 1h swords (tier 1)
-	["dagger"] = 0.75,
-	["short sword"] = 1,
-	["scimitar"] = 1,
-	["sabre"] = 2,
+	["dagger"] = 1,				-- level 1
+	["short sword"] = 1.5,		-- level 1
+	["scimitar"] = 2,			-- level 1
+	["sabre"] = 3,				-- level 1
 	["blade"] = 4,
 	["falchion"] = 5,
 	["claymore"] = 6,
@@ -117,8 +117,8 @@ itemLevel = {
 	["executioner's sword"] = 42,
 	
 	-- 1h maces (tier 1)
-	["club"] = 0.75,
-	["spiked club"] = 1,
+	["club"] = 1,				-- level 1
+	["spiked club"] = 2,		-- level 1
 	["mace"] = 3,
 	["morning star"] = 7,
 	["flail"] = 12,
@@ -140,9 +140,9 @@ itemLevel = {
 	["martel de fer"] = 42,
 	
 	-- axes (tier 1)
-	["small axe"] = 0.75,
-	["axe"] = 1,
-	["large axe"] = 1.5,
+	["small axe"] = 2,			-- level 1
+	["axe"] = 3,				-- level 1
+	["large axe"] = 4,			-- level 1
 	["broad axe"] = 6,
 	["battle axe"] = 10,
 	["great axe"] = 15,
@@ -157,8 +157,8 @@ itemLevel = {
 	["ancient axe"] = 42,
 	
 	-- bows (tier 1)
-	["short bow"] = 0.75,
-	["hunter's bow"] = 1,
+	["short bow"] = 1,			-- level 1
+	["hunter's bow"] = 2,		-- level 1
 	["long bow"] = 3,
 	["composite bow"] = 6,
 	["short battle bow"] = 11,
