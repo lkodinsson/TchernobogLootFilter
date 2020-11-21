@@ -24,7 +24,7 @@ dofile "lootFilter/config.ini"
 if type(PROFILE)=="string" then
 	if isFile("lootFilter/profiles/"..PROFILE..".ini") then
 		dofile("lootFilter/profiles/"..PROFILE..".ini")
-	else isFile("lootFilter/profiles/"..PROFILE..".txt") then
+	elseif isFile("lootFilter/profiles/"..PROFILE..".txt") then
 		dofile("lootFilter/profiles/"..PROFILE..".txt")
 	else
 		printMsg("Invalid profile.")
