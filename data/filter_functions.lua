@@ -34,15 +34,10 @@ function exists(name)
     return os.rename(name,name) and true or false
 end
 
+-- Thanks lhf from https://stackoverflow.com/a/4991602/3173125
 function isFile(name)
-    if type(name)~="string" then return false end
-    if not exists(name) then return false end
-    local f = io.open(name)
-    if f:read(1) then
-        f:close()
-        return true
-    end
-    return false
+   local f=io.open(name,"r")
+   if f~=nil then io.close(f) return true else return false end
 end
 
 function isDir(name)
