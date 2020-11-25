@@ -1,8 +1,5 @@
 # TchernobogLootFilter
-Loki's Loot Filter for Tchernobog
-The ultimate Tchernobog loot filter
-
-Functionally it is more of a extension to the functionality of filters. Rather than modifying lootFilter.lua and creating your own logic, you instead create a filter profile. The game loads my filter, loads your profile, and from there it does all the filter work you want.
+Primarily this acts to extend the functionality of filters and make creating them simpler. Rather than having you modify lootFilter.lua and creating your own logic, you instead create a filter profile. The game loads my filter, loads your profile, and from there it does all the filter work you want.
 
 # Installation
 [Download the latest version](https://github.com/lkodinsson/TchernobogLootFilter/archive/main.zip), then extract it into your lootFilter folder where you have installed Tchernobog. That's it, you're done.
