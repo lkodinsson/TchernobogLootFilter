@@ -1,5 +1,5 @@
 require "lootFilter/global"
-dofile "lootFilter/data/global.lua"
+dofile "lootFilter/data/global_addon.lua"
 
 --load all data files
 dofile "lootFilter/data/data_items.lua"
@@ -43,7 +43,7 @@ dofile "lootFilter/data/filter_update.lua"
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-function myLootFilter(data)
+function myLootFilter_loki(data)
 ---------------add your functions to the array here!---------------
 --list with exception of items
 	local exception = {
@@ -62,5 +62,5 @@ function myLootFilter(data)
 		recolorItems(data),
 	}
 ---------------end of functions array, don't touch the rest!---------------
-	return handleEverything(data,filterList,exception,renameList,recolorList)
+	return handleEverything_loki(data,filterList,exception,renameList,recolorList)
 end

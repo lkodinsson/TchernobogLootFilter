@@ -7,7 +7,7 @@ HIDE = true
 warningMsg = false
 
 -- handleEverything() changed to allow modifying of NPCs/Objects
-function handleEverything(data,filterList,exception,renames,recolors)
+function handleEverything_loki(data,filterList,exception,renames,recolors)
 	local newName = getNew(data.displayedName,renames)
 	local newColor = getNew(data.textColor,recolors)
 	--if data.itemType == -1 then
@@ -20,7 +20,7 @@ function handleEverything(data,filterList,exception,renames,recolors)
 end
 
 -- lootFilter() changed to allow the hidden purple color
-function lootFilter(displayedName,textColor,itemType,isIdentified,playerClass,playerLevel)
+function lootFilter_loki(displayedName,textColor,itemType,isIdentified,playerClass,playerLevel)
 	local isGood,v1,v2,v3 = pcall(myLootFilter,{displayedName=displayedName:lower(),textColor=textColor,itemType=itemType,isIdentified=isIdentified,playerClass=playerClass,playerLevel=playerLevel})
     if isGood == true then
 		if v1 ~= nil and v2 ~= nil and v3 ~= nil then
