@@ -43,7 +43,7 @@ dofile "lootFilter/data/filter_update.lua"
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
 
-function myLootFilter_loki(data)
+function myLootFilter(data)
 ---------------add your functions to the array here!---------------
 --list with exception of items
 	local exception = {
@@ -62,5 +62,5 @@ function myLootFilter_loki(data)
 		recolorItems(data),
 	}
 ---------------end of functions array, don't touch the rest!---------------
-	return handleEverything_loki(data,filterList,exception,renameList,recolorList)
+	return handleEverything(data,filterList,exception,renameList,recolorList)
 end
