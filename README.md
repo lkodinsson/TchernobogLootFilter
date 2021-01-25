@@ -2,7 +2,7 @@
 Primarily this acts to extend the functionality of filters and make creating them simpler. Rather than having you modify lootFilter.lua and creating your own logic, you instead create a filter profile. The game loads my filter, loads your profile, and from there it does all the filter work you want.
 
 # Installation
-[Download the latest version](https://github.com/lkodinsson/TchernobogLootFilter/archive/main.zip), then extract the contents of the folder inside that archive (TchernobogLootFilter-main) it into your lootFilter folder where you have installed Tchernobog. It should ask you to overwrite lootfilter.lua. Once you have done that, it's ready to go.
+[Download the latest version](https://github.com/lkodinsson/TchernobogLootFilter/archive/main.zip), then extract the contents of the folder inside that archive into your lootFilter folder where you have installed Tchernobog (t should ask you to overwrite lootFilter.lua). Once you have done that, it's ready to go.
 
 If you want to change the filter's profile to something more strict, open and edit config.ini and set to the name of your desired filter profile. For example:
 
