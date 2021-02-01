@@ -27,6 +27,10 @@ function hideItems(data)
 	if itemColor == COLOR_GOLD and (alwaysShowUnique[itemName] or alwaysShowUniqueBase[itemName]) then return SHOW end
 	if itemColor == COLOR_GREEN and (alwaysShowSet[itemName] or alwaysShowSetBase[itemName]) then return SHOW end
 
+	if itemColor == COLOR_WHITE and isEquipment(data) and hideNormal == true then return HIDE end
+	if itemColor == COLOR_BLUE and isEquipment(data) and hideMagic == true then return HIDE end
+	if itemColor == COLOR_YELLOW and isEquipment(data) and hideRare == true then return HIDE end
+
 	if alwaysHide[itemName] then return HIDE end
 	if alwaysHideType[itemType[itemName]] then
 		if (itemColor == COLOR_GOLD or itemColor == COLOR_GREEN) and typeFilterUniques then

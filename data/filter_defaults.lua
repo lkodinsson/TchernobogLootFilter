@@ -14,6 +14,10 @@ showNormal = true
 showMagic = true
 showRare = true
 
+hideNormal = false
+hideMagic = false
+hideRare = false
+
 filterEquipment = true
 filterGold = true
 filterBooks = true
