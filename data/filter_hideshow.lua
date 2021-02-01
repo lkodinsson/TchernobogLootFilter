@@ -8,6 +8,14 @@ function hideItems(data)
 	
 	if itemColor ~= COLOR_WHITE and isEquipment(data) and data.isIdentified == 1 then return SHOW end
 	
+	if itemColor == COLOR_GOLD and (highValueUnique[itemName] or highValueUniqueBase[itemName]) then return SHOW end
+	if itemColor == COLOR_GREEN and (highValueSet[itemName] or highValueSetBase[itemName]) then return SHOW end
+	if highValueJewelry and (data.itemType == ITEM_FING or data.itemType == ITEM_NECK) and (itemColor == COLOR_GOLD or itemColor == COLOR_GREEN) then return SHOW end
+	
+	if itemColor == COLOR_WHITE and isEquipment(data) and showNormal == false then return HIDE end
+	if itemColor == COLOR_BLUE and isEquipment(data) and showMagic == false then return HIDE end
+	if itemColor == COLOR_YELLOW and isEquipment(data) and showRare == false then return HIDE end
+	
 	if alwaysShow[itemName] or highValue[itemName] then return SHOW end
 	if alwaysShowType[itemType[itemName]] then
 		if (itemColor == COLOR_GOLD or itemColor == COLOR_GREEN) and typeFilterUniques then
@@ -16,14 +24,9 @@ function hideItems(data)
 			return SHOW
 		end
 	end
-	if itemColor == COLOR_GOLD and (alwaysShowUnique[itemName] or alwaysShowUniqueBase[itemName] or highValueUnique[itemName] or highValueUniqueBase[itemName]) then return SHOW end
-	if itemColor == COLOR_GREEN and (alwaysShowSet[itemName] or alwaysShowSetBase[itemName] or highValueSet[itemName] or highValueSetBase[itemName]) then return SHOW end
-	if highValueJewelry and (data.itemType == ITEM_FING or data.itemType == ITEM_NECK) and (itemColor == COLOR_GOLD or itemColor == COLOR_GREEN) then return SHOW end
-	
-	if itemColor == COLOR_WHITE and isEquipment(data) and showNormal == false then return HIDE end
-	if itemColor == COLOR_BLUE and isEquipment(data) and showMagic == false then return HIDE end
-	if itemColor == COLOR_YELLOW and isEquipment(data) and showRare == false then return HIDE end
-	
+	if itemColor == COLOR_GOLD and (alwaysShowUnique[itemName] or alwaysShowUniqueBase[itemName]) then return SHOW end
+	if itemColor == COLOR_GREEN and (alwaysShowSet[itemName] or alwaysShowSetBase[itemName]) then return SHOW end
+
 	if alwaysHide[itemName] then return HIDE end
 	if alwaysHideType[itemType[itemName]] then
 		if (itemColor == COLOR_GOLD or itemColor == COLOR_GREEN) and typeFilterUniques then
