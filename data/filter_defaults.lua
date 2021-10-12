@@ -30,6 +30,10 @@ alwaysHideType = {}
 alwaysHideUnique = {}
 alwaysHideSet = {}
 
+alwaysShowNormal = false
+alwaysShowMagic = false
+alwaysShowRare = false
+
 alwaysShow = {}
 alwaysShowType = {}
 alwaysShowUnique = {}
@@ -51,3 +55,5 @@ recolorBooks = true
 recolorScrolls = true
 recolorShrines = true
 recolorItemList = {}
+
+oldStrictnessScaling = false

@@ -27,7 +27,12 @@ if rarityMult["normal"] > rarityMult["magic"] then rarityMult["normal"] = rarity
 
 --strictMult = rarityMult["rare"]*42/60-1
 --levelMult = 1+strictness/100*strictMult
-levelMult = 1+strictness/100*(rarityMult["rare"]*42/60-1)
+if oldStrictnessScaling = true then
+	levelMult = 1+strictness/100*(rarityMult["rare"]*42/60-1)
+else
+	levelMult = strictness/100*(rarityMult["rare"]*42/60)
+end
+--If you make strictness = 100/7, that simulates the old formula floor on the new formula
 
 alwaysHide = set(alwaysHide)
 alwaysHideType = set(alwaysHideType)

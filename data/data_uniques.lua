@@ -145,7 +145,7 @@ itemUnique = {
 	["the butcher's cleaver"] = "cleaver",
 	["ace of spades"] = "small axe",
 	["aguinara's hatchet"] = "small axe",
-	["goreshowel"] = "axe",
+	["goreshovel"] = "axe",
 	["sharp beak"] = "large axe",
 	["stonecleaver"] = "broad axe",
 	["the celestial axe"] = "battle axe",
@@ -178,7 +178,7 @@ itemUnique = {
 	["the blackoak bow"] = "cedar bow",
 	["magewrath"] = "ward bow",
 	["heartseeker"] = "ward bow",
-	["eaglerhorn"] = "long siege bow",
+	["eaglehorn"] = "long siege bow",
 	["fist of heavens"] = "rune bow",
 	["windforce"] = "gothic bow",
 	
