@@ -12,9 +12,9 @@ function hideItems(data)
 	if itemColor == COLOR_GREEN and (highValueSet[itemName] or highValueSetBase[itemName]) then return SHOW end
 	if highValueJewelry and (data.itemType == ITEM_FING or data.itemType == ITEM_NECK) and (itemColor == COLOR_GOLD or itemColor == COLOR_GREEN) then return SHOW end
 	
-	if itemColor == COLOR_WHITE and isEquipment(data) and alwaysShowNormal == true then return TRUE end
-	if itemColor == COLOR_BLUE and isEquipment(data) and alwaysShowMagic == true then return TRUE end
-	if itemColor == COLOR_YELLOW and isEquipment(data) and alwaysShowRare == true then return TRUE end
+	if itemColor == COLOR_WHITE and isEquipment(data) and alwaysShowNormal == true then return SHOW end
+	if itemColor == COLOR_BLUE and isEquipment(data) and alwaysShowMagic == true then return SHOW end
+	if itemColor == COLOR_YELLOW and isEquipment(data) and alwaysShowRare == true then return SHOW end
 	
 	if itemColor == COLOR_WHITE and isEquipment(data) and showNormal == false then return HIDE end
 	if itemColor == COLOR_BLUE and isEquipment(data) and showMagic == false then return HIDE end
