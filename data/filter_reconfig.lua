@@ -27,7 +27,7 @@ if rarityMult["normal"] > rarityMult["magic"] then rarityMult["normal"] = rarity
 
 --strictMult = rarityMult["rare"]*42/60-1
 --levelMult = 1+strictness/100*strictMult
-if oldStrictnessScaling = true then
+if oldStrictnessScaling == true then
 	levelMult = 1+strictness/100*(rarityMult["rare"]*42/60-1)
 else
 	levelMult = strictness/100*(rarityMult["rare"]*42/60)
