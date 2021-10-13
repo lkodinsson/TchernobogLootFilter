@@ -22,7 +22,7 @@ shrines = {
 	["mastery"] = COLOR_YELLOW, --increases damage (temporary buff, not permanent)
 	["meditating"] = COLOR_YELLOW, --mana regen (temporary buff, not permanent)
 	["mystic"] = COLOR_WHITE, --casts town portal
-	["mysterious"] = COLOR_RED, --increases a random stat, reduces the rest 
+	["mysterious"] = COLOR_ORANGE, --increases a random stat, reduces the rest 
 	["ornate"] = COLOR_ORANGE, --increases holy bolt level, but reduces max mana (temporary buff, not permanent)
 	["protection"] = COLOR_BLUE, --physical resistance & armor class (temporary buff, not permanent)
 	["quiet"] = COLOR_BLUE, --increases vitality (temporary buff, not permanent)
@@ -33,7 +33,7 @@ shrines = {
 	["spooky"] = COLOR_BLUE, --refills health & mana
 	["stone"] = COLOR_YELLOW, --recharges staves
 	["tainted"] = COLOR_ORANGE, --increases a random stat, each other player gets a random stat reduced (temporary buff, not permanent)
-	["thaumaturgic"] = COLOR_WHITE, --resets other shrines/containers/doors
+	["thaumaturgic"] = COLOR_YELLOW, --resets other shrines/containers/doors
 	
 	--[""] = COLOR_YELLOW,	--There is a missing shrine that grants temporary invisibility. If you know what it is, let me know.
 }
@@ -42,5 +42,5 @@ shrinesSpecial = {
 	["murky pool"] = COLOR_BLUE, --grants infravision
 	["blood fountain"] = COLOR_GREY, --heals 1 health
 	["purifying spring"] = COLOR_GREY, --heals 1 mana
-	["fountain of tears"] = COLOR_RED, --increases a random stat, reduces a random other stat
+	["fountain of tears"] = COLOR_ORANGE, --increases a random stat, reduces a random other stat
 }
