@@ -34,3 +34,7 @@ function isFile(name)
    local f=io.open(name,"r")
    if f~=nil then io.close(f) return true else return false end
 end
+
+function isEquipment(data)
+	return data.itemType >= ITEM_FING and data.itemType <= ITEM_WP_OFFHAND
+end
