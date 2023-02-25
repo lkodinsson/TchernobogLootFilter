@@ -1,4 +1,3 @@
-COLOR_PURPLE = 9
 ITEM_OBJECT = -1
 
 SHOW = false
@@ -19,16 +18,16 @@ function handleEverything(data,filterList,exception,renames,recolors)
 	return newName,newColor,filter(filterList)
 end
 
--- lootFilter() changed to allow the hidden purple color
+-- lootFilter() changed to add a warning if something is wrong
 function lootFilter(displayedName,textColor,itemType,isIdentified,playerClass,playerLevel)
 	local isGood,v1,v2,v3 = pcall(myLootFilter,{displayedName=displayedName:lower(),textColor=textColor,itemType=itemType,isIdentified=isIdentified,playerClass=playerClass,playerLevel=playerLevel})
     if isGood == true then
 		if v1 ~= nil and v2 ~= nil and v3 ~= nil then
 		    if type(v1) == "string" and type(v2) == "number" and type(v3) == "number" then
-				if v2 >= 0 and v2 <= 9 then
+				if v2 >= 0 and v2 <= 10 then
 				    return v1,v2,v3
 				else
-					--printMsg("Color must be between 0 and 9.")
+					--printMsg("Color must be between 0 and 10.")
 					printMsg("Enter a correct color as provided!")
 				end
 			else
