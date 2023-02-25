@@ -5,7 +5,7 @@ shrines = {
 	["diabolic"] = COLOR_GOLD, --summons a boss nearby
 	["divine"] = COLOR_YELLOW, --refills health and mana & gives 2 potions
 	["eerie"] = COLOR_BLUE, --increases magic (temporary buff, not permanent)
-	["eldritch"] = COLOR_YELLOW, --transforms potions into rejuvs
+	["eldritch"] = COLOR_PURPLE, --transforms potions into rejuvs
 	["enchanted"] = COLOR_ORANGE, --increases spell levels, but drains mana (temporary buff, not permanent)
 	["experience"] = COLOR_BLUE, --experience boost
 	["fascinating"] = COLOR_ORANGE, --increases fire bolt level, but reduces max mana (temporary buff, not permanent)
@@ -42,5 +42,5 @@ shrinesSpecial = {
 	["murky pool"] = COLOR_BLUE, --grants infravision
 	["blood fountain"] = COLOR_GREY, --heals 1 health
 	["purifying spring"] = COLOR_GREY, --heals 1 mana
-	["fountain of tears"] = COLOR_RED, --increases a random stat, reduces a random other stat
+	["fountain of tears"] = COLOR_RED, --increases a random stat, reduces a random other stat (temporary buff, not permanent)
 }
