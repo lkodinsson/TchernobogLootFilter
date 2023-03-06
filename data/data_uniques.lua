@@ -163,7 +163,7 @@ itemUnique = {
 	-- crossbows
 	["the needler"] = "crossbow",
 	["demon machine"] = "hand crossbow",
-	["burizo-do kyanon"] = "siege crossbow",
+	["buriza-do kyanon"] = "siege crossbow",
 	
 	-- bows (tier 1)
 	["flamedart"] = "hunter's bow",
@@ -187,19 +187,19 @@ itemUnique = {
 	["death's fathom"] = "dimensional shard",
 	
 	-- staves (tier 1)
-	["immolator"] = "short staff",
-	["gleamsong"] = "short staff",
+	["immolator"] = "short staff or fire bolt",
+	["gleamsong"] = "short staff of flash",
 	["staff of shadows"] = "long staff",
-	["boneshade"] = "long staff",
+	["boneshade"] = "long staff of bone spirit",
 	["maelstrom"] = "composite staff",
-	["mindcry"] = "quarter staff",
-	["thundercall"] = "quarter staff",
-	["the protector"] = "war staff",
+	["mindcry"] = "quarter staff of teleport",
+	["thundercall"] = "quarter staff of chain lightning",
+	["the protector"] = "war staff of heal other",
 	["storm spire"] = "war staff",
 	-- staves (tier 2)
-	["warspear"] = "elder staff",
-	["heretic's cane"] = "elder staff",
-	["rod of onan"] = "cedar staff",
+	["warspear"] = "elder staff of phasing",
+	["heretic's cane"] = "elder staff of dark pact",
+	["rod of onan"] = "cedar staff of golem",
 	["skull collector"] = "cedar staff",
 	["spire of aranoch"] = "rune staff",
 	["chromatic ire"] = "rune staff",

@@ -21,7 +21,7 @@ itemSet = {
 	-- cathan
 	["cathan's mask"] = "full helm",
 	["cathan's mesh"] = "splint mail",
-	["cathan's rule"] = "quarter staff",
+	["cathan's rule"] = "quarter staff of holy bolt",
 	
 	-- isenhart
 	["isenhart's horn"] = "full helm",
@@ -43,7 +43,7 @@ itemSet = {
 	-- arcanna
 	["arcanna's head"] = "skull cap",
 	["arcanna's flesh"] = "splint mail",
-	["arcanna's deathwand"] = "composite staff",
+	["arcanna's deathwand"] = "composite staff of guardian",
 	
 	-- vidala
 	["vidala's ambush"] = "scale mail",
@@ -66,7 +66,7 @@ itemSet = {
 	-- naj
 	["naj's circlet"] = "crown",
 	["naj's light plate"] = "light plate",
-	["naj's puzzler"] = "long staff",
+	["naj's puzzler"] = "long staff of teleport",
 	
 	-- milabrega
 	["milabrega's diadem"] = "great helm",
